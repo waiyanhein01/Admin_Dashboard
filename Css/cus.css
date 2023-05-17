@@ -1,0 +1,63 @@
+body {
+    background-color: #f1f5f9;
+}
+
+.aside {
+    width: 23rem;
+}
+
+.main {
+    width: 100%;
+}
+
+.profile-card {
+    width: 35px;
+    height: 35px;
+}
+
+.ouline {
+    outline: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.list-group-item {
+    border-left-width: 4px !important;
+    border-color: transparent !important;
+}
+
+.list-group-item.active {
+    /* color: var(--bs-list-group-active-color); */
+    background-color: transparent;
+    color: blue;
+    border-style: solid !important;
+    border-left-color: blue !important;
+}
+
+.data-chart {
+    height: 20rem;
+}
+
+.data-chart2 {
+    height: 16rem;
+}
+
+.fs-10 {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 992px){
+    .aside {
+        position: fixed;
+        left: -100%;
+        transition: 0.5s;
+        height: 100vh;
+        background: #ffffff;
+        z-index: 1051;
+    }
+    .aside.show {
+        left: 0;
+    }
+}
